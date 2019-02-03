@@ -2,6 +2,10 @@
 * @author: Chisimdi Damian Ezeanieto
 * @date: 02/02/19
 */
+
+/* 
+    Facebook Buttons
+*/
 .facebook-style-btn {
     border-radius: 2px;
     font-size: 0.9rem;
@@ -38,4 +42,108 @@
 .facebook-style-light:active {
     background: #d8dade;
     border-color: #d8dade;
+}
+
+/* 
+    3D Buttons
+*/
+.btn-3d-1 {
+    position: relative;
+    background: orangered;
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+.btn-3d-1:hover {
+    background: hsl(16, 145%, 45%);
+}
+.btn-3d-1:active {
+    background: hsl(16, 100%, 30%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+.btn-3d-1::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-right: 6px solid hsl(16, 100%, 30%);
+    border-left-width: 0;
+    background: none;
+    top: 0;
+    left: -6px;
+}
+.btn-3d-1::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid hsl(16, 100%, 30%);
+    border-bottom-width: 0;
+    background: none;
+    bottom: -6px;
+    right: 0;
+}
+.btn-3d-1:active::before {
+    border: 3px solid transparent;
+    border-right: 3px solid hsl(16, 100%, 30%);
+}
+.btn-3d-1:active::after {
+    border: 3px solid transparent;
+    border-top: 3px solid hsl(16, 100%, 30%);
+}
+
+ .btn-3d-2 {
+    position: relative;
+    background: #ecd300;
+    background: -webkit-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -moz-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -o-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    border-radius: 100%;
+    border: 1px solid hsl(54, 100%, 20%);
+    height: 120px;
+    color: #fff;
+    outline: none;
+    width: 120px;
+    font-size: 1.4rem;
+    z-index: 4;
+    text-shadow: 0 -1px 0 #c3af07;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%),
+        0 2px 0 hsl(54, 100%, 20%),
+        0 3px 0 hsl(54, 100%, 18%),
+        0 4px 0 hsl(54, 100%, 16%),
+        0 5px 0 hsl(54, 100%, 14%),
+        0 6px 0 hsl(54, 100%, 12%),
+        0 7px 0 hsl(54, 100%, 10%),
+        0 8px 0 hsl(54, 100%, 8%),
+        0 9px 0 hsl(54, 100%, 6%);
+ }
+.btn-3d-2:hover {
+    background: -webkit-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -moz-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -o-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+}
+.btn-3d-2:active {
+    background: -webkit-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: -moz-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: -o-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    top: 2px;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%),
+        0 2px 0 hsl(54, 100%, 20%),
+        0 3px 0 hsl(54, 100%, 18%),
+        0 4px 0 hsl(54, 100%, 16%),
+        0 5px 0 hsl(54, 100%, 14%),
+        0 6px 0 hsl(54, 100%, 12%),
+        0 7px 0 hsl(54, 100%, 10%);
 }
